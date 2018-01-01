@@ -1,4 +1,6 @@
 import pickle as p
+import requests
+
 
 a = 0
 
@@ -14,5 +16,10 @@ def my_p(dic, i):
             print('-' * i, k, '->', v)
 
 
-it = p.load(open('itchat.pkl', 'rb'))
+it = p.load(open('..\\itchat.pkl', 'rb'))
 my_p(it, a)
+
+
+# s = requests.session()
+# s.get()
+# s.request()
